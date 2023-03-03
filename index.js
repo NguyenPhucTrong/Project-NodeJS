@@ -11,6 +11,11 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+app.get("/api/test", () => {
+  console.log("Test is Successfully");
+});
+
 app.listen(process.env.PORT || 8080, () => {
   console.log("Sever is running 8080");
 });
